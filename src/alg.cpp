@@ -22,9 +22,7 @@ int prior(char ch) {
 }
 
 std::string infx2pstfx(std::string inf) {
-  // добавьте сюда нужный код
-  return std::string("");
-  std::string pfx;
+    std::string pfx;
     int i = 0;
     char ch = inf[i];
     char top = 0;
@@ -76,9 +74,7 @@ std::string infx2pstfx(std::string inf) {
 }
 
 int eval(std::string pst) {
-  // добавьте сюда нужный код
-  return 0;
-  std::string tstr;
+    std::string tstr;
   TStack<int> stack2;
   for (int i = 0; i < pst.length(); i++) {
     if (pst[i] >= '0' && pst[i] <= '9') {
@@ -98,3 +94,4 @@ int eval(std::string pst) {
   }
   return stack2.get();
 }
+    
